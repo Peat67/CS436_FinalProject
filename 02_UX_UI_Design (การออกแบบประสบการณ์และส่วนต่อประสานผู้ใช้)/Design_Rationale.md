@@ -28,8 +28,8 @@
 | :--- | :--- |
 | **Layout (Full-Screen & Max-Width)** | เว็บไซต์ใช้พื้นที่เต็มหน้าจอ แต่จำกัดเนื้อหาหลักด้วย **Max-Width (1200px)** และจัดให้อยู่กึ่งกลาง (**Centering**) เพื่อให้ง่ายต่อการอ่านบนจอขนาดใหญ่ และยังคงความสวยงาม (**Aesthetics**) |
 | **Card-Based Design (Sections)** | แต่ละส่วน (Input, Graph, Table) ถูกห่อหุ้มด้วย **Card Background (สีขาว)** และมี **เงา (Shadow)** ช่วยแยกกลุ่มข้อมูลออกจากพื้นหลังสีเทาอ่อน (`--background-color`) ทำให้องค์ประกอบดูโดดเด่นและเป็นระเบียบ (**Separation of Concerns**) |
-| **Primary Color ($\text{Blue, \#007bff}$)** | ใช้สีน้ำเงิน (Primary Color) สำหรับ ส่วนหัว (Header), ชื่อส่วน (Heading), และ เส้นกราฟ, เพื่อสร้างความรู้สึก **น่าเชื่อถือ (Trust)** และ **ความเป็นมืออาชีพ (Professionalism)** |
-| **Secondary Color ($\text{Green, \#28a745}$)** | ใช้สีเขียว (Secondary Color) สำหรับ **ปุ่มบันทึก** และ สถานะ '**Healthy Weight**' เพื่อสร้างแรงจูงใจและเน้นย้ำถึงผลลัพธ์ด้านสุขภาพที่เป็นบวก (**Positive Reinforcement**) |
+| **Primary Color น้ำเงิน** | ใช้สีน้ำเงิน (Primary Color) สำหรับ ส่วนหัว (Header), ชื่อส่วน (Heading), และ เส้นกราฟ, เพื่อสร้างความรู้สึก **น่าเชื่อถือ (Trust)** และ **ความเป็นมืออาชีพ (Professionalism)** |
+| **Secondary Color เขียว** | ใช้สีเขียว (Secondary Color) สำหรับ **ปุ่มบันทึก** และ สถานะ '**Healthy Weight**' เพื่อสร้างแรงจูงใจและเน้นย้ำถึงผลลัพธ์ด้านสุขภาพที่เป็นบวก (**Positive Reinforcement**) |
 | **Color Coding (BMI Categories)** | ใช้สีในการจัดหมวดหมู่ BMI โดยอิงจากสัญญาณเตือน: **สีเขียว (ปกติ), สีเหลือง/ส้ม (เตือน/Overweight), สีแดง (อันตราย/Obesity)** การใช้สีช่วยให้ผู้ใช้ **แปลความหมายของผลลัพธ์ได้ทันที** โดยไม่ต้องอ่านข้อความทั้งหมด |
 | **Form Grid Layout** | จัดเรียงช่องกรอกข้อมูลในรูปแบบ **Grid** ที่มีการปรับเปลี่ยนอัตโนมัติ (เช่น `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))`). ช่วยให้ฟอร์มดูเป็นระเบียบและยังคงใช้งานได้ดีบนหน้าจอขนาดเล็ก (**Responsiveness**) |
 
