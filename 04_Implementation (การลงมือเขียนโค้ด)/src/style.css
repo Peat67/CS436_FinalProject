@@ -1,0 +1,155 @@
+/* static/style.css - Full-Screen & Modern Look */
+
+:root {
+    --primary-color: #007bff; /* น้ำเงิน */
+    --secondary-color: #28a745; /* เขียว */
+    --background-color: #f8f9fa; /* เทาอ่อนมาก */
+    --text-color: #343a40; /* ดำ */
+    --card-background: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh; /* ทำให้ body สูงเต็มหน้าจอ */
+}
+
+/* Header/Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Main Container - ใช้พื้นที่เต็มหน้าจอในแนวกว้าง */
+main {
+    display: flex;
+    flex-direction: column; /* จัดเรียงส่วนย่อยตามแนวตั้ง */
+    max-width: 1200px; /* จำกัดความกว้างสูงสุดของเนื้อหา */
+    margin: 0 auto 30px auto;
+    padding: 0 20px;
+}
+
+/* Section Styling (Card Look) */
+section {
+    background-color: var(--card-background);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+section h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Form Styling */
+.input-form form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* จัดเรียงคอลัมน์อัตโนมัติ */
+    gap: 20px;
+    align-items: end; /* จัดให้ปุ่มอยู่บรรทัดเดียวกับ input */
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.input-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.input-form input[type="number"], 
+.input-form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+    font-size: 1em;
+}
+.input-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.input-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px; /* ชดเชยให้ปุ่มดูอยู่ในแนวเดียวกัน */
+}
+.input-form button:hover {
+    background-color: #1e7e34;
+}
+
+/* Reporting Table */
+.report-table table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    overflow: hidden; 
+    border-radius: 8px;
+}
+.report-table th, .report-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+}
+.report-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+.report-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* แถวสลับสี */
+}
+
+/* BMI Category Highlighting */
+.bmi-value {
+    font-weight: bold;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.underweight { background-color: #ffc107; color: var(--text-color); } /* Yellow */
+.healthy-weight { background-color: var(--secondary-color); } /* Green */
+.overweight { background-color: #fd7e14; } /* Orange */
+.obesity { background-color: #dc3545; } /* Red */
+
+/* Error Message */
+.error-message {
+    color: white;
+    background-color: #dc3545;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.no-data {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 20px;
+    border: 1px dashed #ced4da;
+    border-radius: 6px;
+}
