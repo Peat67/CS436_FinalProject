@@ -70,9 +70,9 @@
 * **หน่วยวัด:** รองรับเฉพาะ **กิโลกรัม (kg)** และ **เซนติเมตร (cm)** เท่านั้น
 
 ---
-
+### 📌 Live Demo
 เปิดใช้งานได้ที่นี่:
-👉 https://github.com/Peat67/CS436_FinalProject.git
+👉 https://cs436-finalprojectreal.onrender.com/
 
 ---
 
